@@ -1,0 +1,8 @@
+prefix=/home/rover1/catkin_ws/devel
+
+Name: rover_pixhawk
+Description: Description of rover_pixhawk
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rover1/catkin_ws/devel/lib 
+Requires: 

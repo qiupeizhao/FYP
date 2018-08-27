@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find rover_description)/launch/rover_ft.launch"/>
+<include file="$(find rover_hardware_launch)/launch/rover_hardware.launch"/>
+<include file="$(find rover_hardware_launch)/launch/rover_odometry.launch"/>
+<include file="$(find rover_driver)/launch/rover_driver.launch"/>
+</launch>

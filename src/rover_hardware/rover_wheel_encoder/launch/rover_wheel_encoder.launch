@@ -1,0 +1,4 @@
+<launch>
+	<node name="serialOdom" pkg="rover_wheel_encoder" type="serialOdom.py" respawn="true" />
+	<node name="odomPublisher" pkg="rover_wheel_encoder" type="odomPublisher.py" respawn="true" /> 
+</launch>

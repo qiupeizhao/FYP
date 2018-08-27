@@ -1,0 +1,3 @@
+<launch>
+<include file="$(find rover_pose_ekf)/ekf_launch.launch"/>
+</launch>

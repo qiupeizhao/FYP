@@ -1,0 +1,8 @@
+prefix=/home/rover1/catkin_ws/devel
+
+Name: rover_wheel_encoder
+Description: Description of rover_wheel_encoder
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rover1/catkin_ws/devel/lib 
+Requires: 

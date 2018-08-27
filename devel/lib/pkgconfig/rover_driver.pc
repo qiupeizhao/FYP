@@ -1,0 +1,8 @@
+prefix=/home/rover1/catkin_ws/devel
+
+Name: rover_driver
+Description: Description of rover_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rover1/catkin_ws/devel/lib 
+Requires: 

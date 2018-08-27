@@ -1,0 +1,6 @@
+<launch>
+<include file="$(find rover_wheel_encoder)/launch/rover_wheel_encoder.launch"/>
+<include file="$(find rplidar_ros)/launch/rover_rplidar.launch"/>
+<include file="$(find realsense2_camera)/launch/rs_aligned_depth.launch"/>
+<include file="$(find rover_pixhawk)/pixhawk.launch"/>
+</launch>

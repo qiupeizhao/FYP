@@ -1,0 +1,10 @@
+<launch>  
+<arg name="model" default="$(find rover_description)/urdf/rover1.xacro"/>
+  <arg name="battery"           default="/sys/class/power_supply/BAT0"      doc="kernel provided locatio for battery info, use /proc/acpi/battery/BAT0 in 2.6 or earlier kernels." />
+  <param name="robot_description" command="$(find xacro)/xacro.py $(arg model)" />
+
+
+  <node pkg="robot_state_publisher" type="robot_state_publisher"      	name="robot_state_publisher">
+    <param name="publish_frequency" type="double" value="30.0" />
+  </node>
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/rover1/catkin_ws/install
+
+Name: rover_pose_ekf
+Description: Description of rover_pose_ekf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rover1/catkin_ws/install/lib 
+Requires: 

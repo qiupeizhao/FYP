@@ -7,7 +7,8 @@
       <param name="subscribe_scan" type="bool"  value="true"/>
 
       <!-- input -->
-      <remap from="odom" to="/fused/odom"/>
+      <!-- remap from="odom" to="/fused/odom"/ -->
+      <remap from="odom" to="/odom_combined"/>
       <remap from="scan" to="/scan"/>
 
       <remap from="rgb/image" to="/camera/color/image_raw"/>

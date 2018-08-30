@@ -71,8 +71,7 @@ rospy.init_node('odom_convertor')
 
 rospy.Subscriber("/robot_pose_ekf/odom_combined", PoseWithCovarianceStamped, convert);
 
-
-p = rospy.Publisher("fused/odom", Odometry, queue_size=50)
+p = rospy.Publisher("/odom_combined", Odometry, queue_size=50)
 
 on = True; #Can set off for safety
 rc = False;

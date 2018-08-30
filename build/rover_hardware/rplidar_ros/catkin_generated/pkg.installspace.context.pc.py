@@ -5,4 +5,4 @@ PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "rplidar_ros"
 PROJECT_SPACE_DIR = "/home/rover1/catkin_ws/install"
-PROJECT_VERSION = "1.7.0"
+PROJECT_VERSION = "1.9.0"

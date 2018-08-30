@@ -1,6 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
-<include file="$(find rover_description)/launch/rover_ft.launch"/>
-<include file="$(find rover_hardware_launch)/launch/rover_hardware.launch"/>
-<include file="$(find rover_hardware_launch)/launch/rover_odometry.launch"/>
-<include file="$(find rover_driver)/launch/rover_driver.launch"/>
+   <arg name="Test" default="false"/>
+
+   <include file="$(find rover_description)/launch/rover_ft.launch" />
+
+   <group if="$(arg Test)">
+     <include file="$(find rover_hardware_launch)/launch/rover_hardware.launch" />
+       <arg name="Test" value="true"/>
+     </include>
+   </group>
+
+   <group unless="$(arg Test)">
+     <include file="$(find rover_hardware_launch)/launch/rover_hardware.launch" />
+   </group>
+
+   <group if="$(arg Test)">
+     <include file="$(find rover_hardware_launch)/launch/rover_odometry.launch">
+       <arg name="Test" value="true"/>
+     </include>
+   </group>
+
+   <group unless="$(arg Test)">
+     <include file="$(find rover_hardware_launch)/launch/rover_odometry.launch"/>
+   </group>
+
+   <include file="$(find rover_driver)/launch/rover_driver.launch" />
 </launch>
+
+
+

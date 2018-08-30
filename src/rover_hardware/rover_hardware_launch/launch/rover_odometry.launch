@@ -1,4 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
-<include file="$(find rover_pose_ekf)/ekf_launch.launch"/>
-<include file="$(find rover_odom_converter)/launch/rover_odom_converter.launch"/>
+   <!-- <include file="$(find rover_odometry_fusion)/rover_odometry_fusion.launch"/>   -->
+
+   <arg name="Test" default="false"/>
+   <group if="$(arg Test)">
+	<include file="$(find rover_odometry_fusion)/rover_odometry_fusion.launch"/>
+ 	<include file="$(find rover_odom_converter)/launch/rover_odom_converter.launch"/>
+   </group>
+
+   <group unless="$(arg Test)">
+   	<include file="$(find rover_odometry_fusion)/rover_odometry_fusion_visiual.launch" />
+   </group>
 </launch>
+
+
+

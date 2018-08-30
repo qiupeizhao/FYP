@@ -1,0 +1,8 @@
+prefix=/home/rover1/catkin_ws/install
+
+Name: rover_odometry_fusion
+Description: Description of rover_odometry_fusion
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/rover1/catkin_ws/install/lib 
+Requires: 

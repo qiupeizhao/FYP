@@ -160,7 +160,7 @@ foreach(t ${realsense2_camera_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "message_runtime;roscpp;sensor_msgs;std_msgs;librealsense2;nodelet;cv_bridge;image_transport;dynamic_reconfigure")
+set(depends "message_runtime;roscpp;sensor_msgs;std_msgs;nodelet;cv_bridge;image_transport;dynamic_reconfigure")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
